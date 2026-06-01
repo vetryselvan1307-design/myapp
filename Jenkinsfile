@@ -5,7 +5,8 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                checkout scm
+                git branch: 'master',
+                    url: 'https://github.com/vetryselvan1307-design/myapp.git'
             }
         }
 
